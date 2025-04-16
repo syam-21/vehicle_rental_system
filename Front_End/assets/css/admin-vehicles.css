@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f3f3f3;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .vehicle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .vehicle-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .vehicle-card h3 {
+    margin-top: 0;
+  }
+  
+  .vehicle-card button {
+    margin-right: 10px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .vehicle-card button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .vehicle-card button:last-of-type {
+    background-color: #f44336;
+    color: white;
+  }
+  

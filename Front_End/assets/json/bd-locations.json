@@ -1,0 +1,51 @@
+{
+    "Dhaka": {
+      "Dhaka": ["Dhanmondi", "Mirpur", "Gulshan"],
+      "Gazipur": ["Tongi", "Sreepur"],
+      "Narayanganj": ["Fatullah", "Siddhirganj"],
+      "Tangail": ["Delduar", "Mirzapur"]
+    },
+    "Chattogram": {
+      "Chattogram": ["Kotwali", "Pahartali"],
+      "Cox's Bazar": ["Teknaf", "Ukhiya"],
+      "Comilla": ["Laksham", "Muradnagar"],
+      "Noakhali": ["Sonaimuri", "Begumganj"]
+    },
+    "Khulna": {
+      "Khulna": ["Khalishpur", "Sonadanga"],
+      "Bagerhat": ["Rampal", "Mongla"],
+      "Jessore": ["Manirampur", "Jhikargacha"],
+      "Satkhira": ["Tala", "Shyamnagar"]
+    },
+    "Rajshahi": {
+      "Rajshahi": ["Boalia", "Paba"],
+      "Bogra": ["Sherpur", "Shibganj"],
+      "Naogaon": ["Badalgachhi", "Sapahar"],
+      "Pabna": ["Ishwardi", "Bera"]
+    },
+    "Barisal": {
+      "Barisal": ["Babuganj", "Banaripara"],
+      "Bhola": ["Char Fasson", "Daulatkhan"],
+      "Patuakhali": ["Kalapara", "Mirzaganj"],
+      "Pirojpur": ["Mathbaria", "Nazirpur"]
+    },
+    "Sylhet": {
+      "Sylhet": ["Beanibazar", "Fenchuganj"],
+      "Moulvibazar": ["Kulaura", "Sreemangal"],
+      "Habiganj": ["Bahubal", "Chunarughat"],
+      "Sunamganj": ["Dirai", "Tahirpur"]
+    },
+    "Mymensingh": {
+      "Mymensingh": ["Muktagacha", "Phulpur"],
+      "Jamalpur": ["Dewanganj", "Melandaha"],
+      "Netrokona": ["Atpara", "Purbadhala"],
+      "Sherpur": ["Nalitabari", "Sreebardi"]
+    },
+    "Rangpur": {
+      "Rangpur": ["Badarganj", "Taraganj"],
+      "Dinajpur": ["Birganj", "Parbatipur"],
+      "Thakurgaon": ["Baliadangi", "Ranisankail"],
+      "Kurigram": ["Chilmari", "Nageshwari"]
+    }
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Speeduko</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/custom/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Orbitron', sans-serif; background: radial-gradient(circle, #0f2027, #203a43, #2c5364); color: white;">
+
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card p-4 shadow" style="background-color: #1a1a1a; border-radius: 15px; width: 100%; max-width: 450px;">
+      <h2 class="text-center text-glow mb-4">Create an Account</h2>
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter full name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Create password" required />
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" required />
+        </div>
+        <button type="submit" class="btn btn-info w-100">Register</button>
+      </form>
+      <p class="text-center mt-3">Already have an account? <a href="login.html" class="text-info">Login</a></p>
+    </div>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

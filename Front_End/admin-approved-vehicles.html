@@ -1,0 +1,26 @@
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("http://localhost:8080/api/v1/vehicles/user/approved")
+    .then(res => res.json())
+    .then(vehicles => {
+      const container = document.getElementById("approvedVehicleContainer");
+      container.innerHTML = "";
+
+      vehicles.forEach(vehicle => {
+        const card = document.createElement("div");
+        card.className = "vehicle-card";
+
+        const imageUrl = `http://localhost:8080/uploads/vehicles/vehicle-${vehicle.id}.jpg`;
+
+        card.innerHTML = `
+          <img src="${imageUrl}" alt="Vehicle Image" />
+          <p><strong>Brand:</strong> ${vehicle.brand}</p>
+          <p><strong>Model:</strong> ${vehicle.model}</p>
+          <p><strong>Type:</strong> ${vehicle.type}</p>
+          <p><strong>Price/Day:</strong> ${vehicle.pricePerDay} BDT</p>
+          <p><strong>Driver:</strong> ${vehicle.driverName}</p>
+        `;
+
+        container.appendChild(card);
+      });
+    });
+});

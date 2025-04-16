@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speeduko Dashboard</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('assets/images/bg-car.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: cyan;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-shadow: 0 0 10px cyan;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .nav-links a,
+    .logout-btn {
+      padding: 0.5rem 1rem;
+      background: cyan;
+      color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .logout-btn:hover {
+      background: #00ffe1;
+    }
+
+    .welcome-container {
+      margin-top: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+
+    .glow-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: cyan;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      animation: glow-fade 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow-fade {
+      0% {
+        opacity: 0.7;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🚗 <span class="glow-text">Speeduko</span></div>
+    <div class="nav-links">
+      <a href="available-vehicles.html" class="nav-btn">🚘 Available Vehicles</a>
+      <a href="my-bookings.html" class="nav-btn">📋 My Bookings</a>
+      <a href="profile.html" class="nav-btn">👤 Profile</a>
+      <button id="logoutBtn" class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div class="welcome-container">
+    <h1 class="glow-text">Welcome to <span style="color: white;">Speeduko</span> – Your Journey Begins Here.</h1>
+  </div>
+
+  <script>
+    function logout() {
+      localStorage.clear();
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>

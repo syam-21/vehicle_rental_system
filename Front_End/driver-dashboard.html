@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Driver Dashboard - Speeduko</title>
+  <link rel="stylesheet" href="assets/css/driver-dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>🚗 Speeduko - Driver Dashboard</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+
+    <section class="driver-info">
+      <img id="driverPhoto" src="" alt="Driver Photo" />
+      <h2 id="driverName">Loading...</h2>
+      <p>Status: <span id="availabilityStatus"></span></p>
+
+      <p>Email: <span id="driverEmail"></span></p>
+      <p>Phone: <span id="driverPhone"></span></p>
+      <p>Address: <span id="driverAddress"></span></p>
+      <p>Trips Completed: <span id="tripCount"></span></p>
+      <p>Rating: <span id="rating"></span></p>
+    </section>
+    <section class="actions">
+      <button onclick="window.location.href='driver-bookings.html'">📋 View My Bookings</button>
+      <button onclick="window.location.href='driver-add-vehicle.html'">➕ Add Vehicle</button>
+      <button onclick="window.location.href='driver-my-vehicles.html'">🚗 My Vehicles</button>
+      <button id="updateStatusBtn">🔄 Change Availability</button>
+    </section>
+    
+  </div>
+
+  <script src="js/driver-dashboard.js"></script>
+</body>
+</html>

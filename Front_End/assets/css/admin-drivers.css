@@ -1,0 +1,76 @@
+body {
+    background: #0f2027;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .heading {
+    color: cyan;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .driver-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .driver-card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 0 10px cyan;
+    transition: transform 0.3s;
+  }
+  
+  .driver-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .driver-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .delete-btn {
+    background: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: darkred;
+  }
+  .driver-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .details-btn {
+    background: #00c3ff;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .details-btn:hover {
+    background: #00b0e6;
+  }
+  

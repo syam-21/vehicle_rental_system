@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Vehicle - Speeduko</title>
+  <link rel="stylesheet" href="assets/css/book-vehicle.css" />
+</head>
+<body>
+  <h1>Book Your Ride</h1>
+  <div class="form-container">
+    <label for="pickupDate">Pickup Date:</label>
+    <input type="date" id="pickupDate" />
+
+    <label for="returnDate">Return Date:</label>
+    <input type="date" id="returnDate" />
+
+    <label for="pickupDivision">Pickup Division:</label>
+    <select id="pickupDivision"></select>
+
+    <label for="pickupDistrict">Pickup District:</label>
+    <select id="pickupDistrict"></select>
+
+    <label for="pickupUpazila">Pickup Upazila:</label>
+    <select id="pickupUpazila"></select>
+
+    <label for="dropDivision">Drop Division:</label>
+    <select id="dropDivision"></select>
+
+    <label for="dropDistrict">Drop District:</label>
+    <select id="dropDistrict"></select>
+
+    <label for="dropUpazila">Drop Upazila:</label>
+    <select id="dropUpazila"></select>
+  </div>
+
+  <div id="fareDisplay" class="fare-text" data-fare="0">Fare: 0 BDT</div>
+  <button class="confirm-btn" onclick="submitBooking()">Confirm Booking</button>
+
+  <!-- Scripts -->
+  <script src="js/booking-locations.js"></script>
+  <script src="js/book-vehicle.js"></script>
+</body>
+</html>

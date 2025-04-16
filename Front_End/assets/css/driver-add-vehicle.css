@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00e5ff;
+    margin-top: 20px;
+  }
+  
+  .vehicle-form {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00e5ff80;
+  }
+  
+  .vehicle-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #00e5ff;
+  }
+  
+  .vehicle-form input,
+  .vehicle-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #00e5ff;
+    background: #121212;
+    color: #fff;
+  }
+  
+  .vehicle-form input[type="file"] {
+    border: none;
+    padding-left: 0;
+  }
+  
+  .vehicle-form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #00e5ff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .vehicle-form button:hover {
+    background: #00bcd4;
+    box-shadow: 0 0 10px #00e5ffb3;
+  }
+  
+  #message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  

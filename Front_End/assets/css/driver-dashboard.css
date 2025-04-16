@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .dashboard-container {
+    width: 90%;
+    max-width: 1000px;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #00ffe1;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    color: #00ffe1;
+  }
+  
+  header button {
+    padding: 10px 20px;
+    background-color: #ff5252;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .driver-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .driver-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ffe1;
+    margin-bottom: 15px;
+  }
+  
+  .driver-info h2 {
+    margin: 0;
+    color: #00ffe1;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .actions button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: #00ffe1;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffe1;
+    transition: transform 0.2s ease;
+  }
+  
+  .actions button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Booking Cards */
+  .booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .booking-card {
+    background-color: #222;
+    padding: 20px;
+    border-left: 6px solid #00ffe1;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 225, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .booking-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .booking-card h3 {
+    margin-top: 0;
+    color: #00ffe1;
+  }
+  
+  .booking-card p {
+    margin: 8px 0;
+  }
+  
+  .booking-card .status {
+    font-weight: bold;
+    color: gold;
+  }
+  
+  .booking-card button {
+    margin-right: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .booking-card button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  
+  .booking-card button:nth-child(1) {
+    background-color: #00e676;
+    color: #000;
+  }
+  
+  .booking-card button:nth-child(2) {
+    background-color: #ff5252;
+    color: #fff;
+  }
+  

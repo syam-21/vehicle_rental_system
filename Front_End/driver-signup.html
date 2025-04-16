@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Driver Signup</title>
+  <link rel="stylesheet" href="assets/css/driver-signup.css" />
+</head>
+<body>
+  <div class="signup-container">
+    <h1>🚗 Driver Registration</h1>
+
+    <form id="driverSignupForm" enctype="multipart/form-data">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="licenseNumber" placeholder="License Number" required />
+      <input type="text" id="nidNumber" placeholder="NID Number" required />
+      <input type="text" id="address" placeholder="Address" required />
+
+      <label>Upload Driver Photo</label>
+      <input type="file" id="driverPhoto" accept="image/*" required />
+
+      <label>Upload License Photo</label>
+      <input type="file" id="licensePhoto" accept="image/*" required />
+
+      <label>Upload NID Photo</label>
+      <input type="file" id="nidPhoto" accept="image/*" required />
+
+      <button type="submit">Register Driver</button>
+    </form>
+
+    <p>Already have an account? <a href="driver-login.html">Login</a></p>
+  </div>
+
+  <script src="js/driver-signup.js"></script>
+</body>
+</html>

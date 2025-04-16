@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #0a0a0a, #1f1f1f);
+  color: white;
+  text-align: center;
+}
+
+.title {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.vehicle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.vehicle-card {
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 15px cyan;
+  width: 320px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.vehicle-image {
+  width: 300px;
+  height: auto;
+  display: block;
+  border: 2px solid lime;
+}
+
+.vehicle-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.vehicle-card label {
+  font-weight: bold;
+  color: cyan;
+}
+
+.vehicle-card input,
+.vehicle-card select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.vehicle-card button {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vehicle-card button:hover {
+  background-color: #00ffe7;
+}

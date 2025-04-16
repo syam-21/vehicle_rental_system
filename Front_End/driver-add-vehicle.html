@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Vehicle - Speeduko</title>
+  <link rel="stylesheet" href="assets/css/driver-add-vehicle.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>🚗 Add New Vehicle</h2>
+    <form id="vehicleForm" enctype="multipart/form-data">
+      <label>Brand:</label>
+      <input type="text" name="brand" required />
+
+      <label>Model:</label>
+      <input type="text" name="model" required />
+
+      <label>Type:</label>
+      <input type="text" name="type" required />
+
+      <label>Price per Day (BDT):</label>
+      <input type="number" name="pricePerDay" step="0.01" required />
+
+      <label>Vehicle Photo:</label>
+      <input type="file" name="vehicleImage" accept="image/*" required />
+
+      <button type="submit">➕ Add Vehicle</button>
+    </form>
+    <button onclick="window.location.href='driver-dashboard.html'">⬅ Back</button>
+  </div>
+
+  <!-- ✅ Load JS after form to avoid null error -->
+  <script src="js/driver-add-vehicle.js"></script>
+</body>
+</html>

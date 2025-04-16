@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: url('your-new-car-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+  font-size: 2.5rem;
+  color: cyan;
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hero-text span {
+  color: #0ff;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  background-color: rgba(0, 255, 255, 0.1);
+  color: #00f7ff;
+  padding: 12px 25px;
+  margin: 10px;
+  border: 2px solid #00f7ff;
+  border-radius: 25px;
+  transition: 0.3s ease;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+.hero-btn:hover {
+  background-color: #00f7ff;
+  color: black;
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+.logout {
+  background-color: rgba(255, 64, 64, 0.1);
+  border: 2px solid #ff4f4f;
+  color: #ff4f4f;
+}
+
+.logout:hover {
+  background-color: #ff4f4f;
+  color: white;
+  box-shadow: 0 0 20px #ff4f4f;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

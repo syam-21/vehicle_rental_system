@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - Speeduko</title>
+  <link rel="stylesheet" href="assets/css/admin-dashboard.css" />
+</head>
+<body>
+  <h1 class="heading">Admin Dashboard</h1>
+  <h2 class="subheading">Welcome, <span id="adminName">Admin</span></h2>
+
+  <div class="admin-actions">
+    <button onclick="window.location.href='admin-drivers.html'">👤 Registered Drivers</button>
+    <button onclick="window.location.href='admin-vehicle-requests.html'">🚗 Add Car Requests</button>
+    <button onclick="logout()">🔓 Logout</button>
+  </div>
+
+  <!-- Optional dashboard stats or summaries can be added here -->
+
+  <script>
+    function logout() {
+      localStorage.removeItem("adminId");
+      window.location.href = "admin-login.html";
+    }
+  </script>
+</body>
+</html>

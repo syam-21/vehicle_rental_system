@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ride With Speeduko</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body class="dark">
+
+  <nav class="navbar">
+    <div class="logo">Speeduko</div>
+    <div class="toggle-container">
+      <span id="themeToggle">🌙</span>
+    </div>
+  </nav>
+
+  <header class="main-content">
+    <h1 class="glow-text">Ride With Speeduko</h1>
+    <p class="tagline">Your Smart Vehicle Rental Partner</p>
+    <div class="button-group">
+      <a href="login.html" class="btn customer">🚗 Customer Login</a>
+      <a href="driver-login.html" class="btn driver">🧑‍✈️ Driver Login</a>
+      <a href="admin-login.html" class="btn admin">🛠 Admin Login</a>
+    </div>
+  </header>
+
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    const body = document.body;
+    toggleBtn.onclick = () => {
+      body.classList.toggle('dark');
+      body.classList.toggle('light');
+      toggleBtn.textContent = body.classList.contains('dark') ? '🌙' : '☀️';
+    };
+  </script>
+
+</body>
+</html>
